@@ -1,0 +1,34 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+#appdirs = "*"
+#attrs = "*"
+#black = "*"
+#click = "*"
+#cycler = "*"
+#demjson = "*"
+#kiwisolver = "*"
+#matplotlib = "*"
+#nose = "*"
+#numpy = "*"
+opencv-contrib-python = "*"
+pandas = "*"
+pillow = "*"
+#pyparsing = "*"
+#python-dateutil = "*"
+#pytz = "*"
+#six = "*"
+#toml = "*"
+#virtualenv = "*"
+#xlrd = "*"
+#xmltodict = "*"
+#yagmail = "*"
+#yapf = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.7"

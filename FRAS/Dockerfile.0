@@ -1,0 +1,16 @@
+FROM python:3.7 as pipenvinstall
+WORKDIR         /app
+COPY ./Pipfile  .
+
+RUN python -m pip install --upgrade pip ; python -m pip install pipenv
+RUN python -m pipenv install
+
+FROM pipenvinstall
+COPY .  .
+
+RUN python -m pipenv --venv
+RUN python -m pipenv run pip freeze
+
+CMD PYTHONPATH=. \
+    python -m pipenv run \
+    python main.py
