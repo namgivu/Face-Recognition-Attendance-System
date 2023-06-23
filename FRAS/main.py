@@ -8,7 +8,7 @@ import Recognize
 # creating the title bar function
 
 def title_bar():
-    os.system('cls')  # for windows
+    os.system('cls' if os.name == 'nt' else 'clear')  # clear screen both win+linux ref. https://stackoverflow.com/a/2084628
 
     # title of the program
 
