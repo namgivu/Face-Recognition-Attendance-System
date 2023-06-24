@@ -75,7 +75,7 @@ def checkCamera():
 
 def CaptureFaces():
     Capture_Image.takeImages()
-    key = input("Enter any key to return main menu")
+    input('Enter any key to return main menu')
     mainMenu()
 
 
@@ -84,7 +84,7 @@ def CaptureFaces():
 
 def Trainimages():
     Train_Image.TrainImages()
-    key = input("Enter any key to return main menu")
+    input('Enter any key to return main menu')
     mainMenu()
 
 
@@ -93,7 +93,7 @@ def Trainimages():
 
 def RecognizeFaces():
     Recognize.recognize_attendence()
-    key = input("Enter any key to return main menu")
+    input('Enter any key to return main menu')
     mainMenu()
 
 
