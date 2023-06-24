@@ -65,8 +65,8 @@ def mainMenu():
 # calling the camera test function from check camera.py file
 
 def checkCamera():
-    check_camera.camer()
-    key = input("Enter any key to return main menu")
+    check_camera.camer()  # press q to quit
+    input("Enter any key to return main menu")
     mainMenu()
 
 
